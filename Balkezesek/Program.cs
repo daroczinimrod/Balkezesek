@@ -8,13 +8,6 @@ internal class orai
 
     static void Main(string[] args)
     {
-        Beolvas();
-
-    }
-
-
-    private static void Beolvas()
-    {
         StreamReader beolvas = new StreamReader("Balkezesek");
         BalosLista.Skip(1);
         while (!beolvas.EndOfStream) ;
@@ -22,7 +15,9 @@ internal class orai
             string[] data = beolvas.ReadLine().Split(';');
             Console.WriteLine(data);
         }
-
         beolvas.Close();
     }
+
+
+
 }
